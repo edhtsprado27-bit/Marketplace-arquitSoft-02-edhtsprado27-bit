@@ -9,3 +9,4 @@ Condiciones y limitaciones obligatorias que deben respetarse durante el diseño 
 | **RC03** | **API REST** | La comunicación entre la capa de presentación (frontend) y la lógica del sistema (backend) debe realizarse mediante servicios API REST. |
 | **RC04** | **Pasarela de Pago** | Las operaciones de pago deben procesarse integrándose obligatoriamente con una pasarela de pago externa mediante servicios web. |
 | **RC05** | **Servicio de Envío** | La información y trazabilidad logística de entrega de pedidos debe conectarse con un servicio externo de envío. |
+
