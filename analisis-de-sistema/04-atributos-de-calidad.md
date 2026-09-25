@@ -9,3 +9,4 @@ Definen las características no funcionales del sistema para evaluar cómo debe 
 | **AC03** | **Escalabilidad** | El sistema debe soportar un incremento sustancial en el volumen de usuarios y peticiones activas sin degradar su desempeño general. |
 | **AC04** | **Seguridad** | Los datos de los usuarios, credenciales y transacciones de compra deben transmitirse encriptados y protegidos contra accesos no autorizados. |
 | **AC05** | **Mantenibilidad** | El sistema debe organizarse mediante un diseño desacoplado que facilite modificar módulos específicos sin afectar otras funcionalidades. |
+
