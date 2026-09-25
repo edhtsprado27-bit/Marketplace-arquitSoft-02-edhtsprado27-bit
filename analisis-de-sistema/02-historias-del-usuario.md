@@ -10,3 +10,4 @@ Las historias de usuario describen las necesidades principales de los actores co
 | **HU04** | Como cliente, quiero realizar un pedido con los productos de mi carrito, para completar mi compra. |
 | **HU05** | Como administrador, quiero gestionar los sellers de la plataforma, para administrar a los vendedores registrados y autorizados. |
 | **HU06** | Como cliente, quiero consultar mis pedidos y su estado, para conocer el seguimiento de mis compras realizada. |
+
