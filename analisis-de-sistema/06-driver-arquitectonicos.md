@@ -9,4 +9,4 @@ Factores determinantes (requisitos, atributos de calidad o restricciones) que im
 | **DA03** | Protección estricta de datos de usuarios y compras. | AC04 - Seguridad | Determina el uso de protocolos seguros (HTTPS, TLS), autenticación mediante tokens (JWT) y cifrado de datos. |
 | **DA04** | Integración externa con pasarela de pago. | RC04 - Pasarela de pago | Condiciona la arquitectura para soportar llamadas asíncronas, webhooks e integración segura con servicios de terceros. |
 | **DA05** | Comunicación mediante arquitectura API REST. | RC03 - API REST | Establece una separación clara entre la capa de presentación frontend y los componentes de la lógica de negocio backend. |
-
+| **DA06** | Cambios no deben afectar otros módulos. | Mantenibilidad | Obliga al uso de una arquitectura modular desacoplada en el backend y Clean Architecture en el frontend. |
