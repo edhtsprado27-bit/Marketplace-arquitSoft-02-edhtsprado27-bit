@@ -1,29 +1,11 @@
-```mermaid
-flowchart TD
-    subgraph CLIENTES ["CLIENTES"]
-        C1["Cliente / Usuario"]
-        C2["Seller / Vendedor"]
-        C3["Administrador"]
-    end
+# Estilo Arquitectónico: Monolito Modular en Capas
 
-    subgraph PRESENTACION ["CAPA DE PRESENTACIÓN"]
-        WEB["Aplicación Web (Angular 18)"]
-    end
+## Diagrama de la Arquitectura Global
 
-    subgraph MONOLITO ["MONOLITO MARKETPLACE (Node.js / Express)"]
-        subgraph MODULOS ["MÓDULOS DE NEGOCIO"]
-            M1["Módulo Usuarios"]
-            M2["Módulo Catálogo"]
-            M3["Módulo Pedidos"]
-            M4["Módulo Pagos"]
-        end
-    end
+![Diagrama Monolito Modular](./diagrama-monolito.png)
 
-    subgraph PERSISTENCIA ["PERSISTENCIA DE DATOS"]
-        DB[(Base de Datos PostgreSQL)]
-    end
-
-    CLIENTES --> WEB
-    WEB -->|"HTTP / REST API"| MONOLITO
-    MONOLITO --> DB
-```
+## Reglas de la Arquitectura
+1. Cada capa solo invoca a la capa inmediatamente inferior.
+2. Un módulo no accede al repository ni a las tablas de otro módulo.
+3. La comunicación entre módulos se hace llamando a su service.
+4. Todo se ejecuta en un único proceso Node.js con una única BD.
