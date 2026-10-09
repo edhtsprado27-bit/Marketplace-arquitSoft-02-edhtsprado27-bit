@@ -1,12 +1,12 @@
-# Drivers Arquitectónicos
+# Drivers arquitectónicos
 
-Factores determinantes (requisitos, atributos de calidad o restricciones) que impactan de forma significativa en las decisiones del diseño de arquitectura.
+Los **drivers arquitectónicos** identificados para el sistema son los siguientes:
 
-| ID | Driver Arquitectónico | Origen | ¿Por qué influye en la arquitectura? |
-| :--- | :--- | :--- | :--- |
-| **DA01** | Soporte a alta concurrencia en campañas comerciales. | AC03 - Escalabilidad | Condiciona la estrategia de escalamiento de infraestructura, balanceo y despliegue del sistema. |
-| **DA02** | Tiempos de respuesta rápidos en procesamiento. | AC01 - Rendimiento | Impacta en las decisiones de diseño de APIs, estrategias de almacenamiento en caché y consultas a la base de datos. |
-| **DA03** | Protección estricta de datos de usuarios y compras. | AC04 - Seguridad | Determina el uso de protocolos seguros (HTTPS, TLS), autenticación mediante tokens (JWT) y cifrado de datos. |
-| **DA04** | Integración externa con pasarela de pago. | RC04 - Pasarela de pago | Condiciona la arquitectura para soportar llamadas asíncronas, webhooks e integración segura con servicios de terceros. |
-| **DA05** | Comunicación mediante arquitectura API REST. | RC03 - API REST | Establece una separación clara entre la capa de presentación frontend y los componentes de la lógica de negocio backend. |
-| **DA06** | Cambios no deben afectar otros módulos. | Mantenibilidad | Obliga al uso de una arquitectura modular desacoplada en el backend y Clean Architecture en el frontend. |
+| ID | Driver arquitectónico | Origen | ¿Por qué influye en la arquitectura? |
+|---|---|---|---|
+| DA01 | El sistema debe soportar un incremento importante de usuarios durante campañas comerciales. | AC03 – Escalabilidad | Puede influir en la estrategia de escalamiento y despliegue. |
+| DA02 | El sistema debe mantener tiempos de respuesta adecuados durante una alta concurrencia. | AC01 – Rendimiento | Puede influir en la comunicación entre componentes, procesamiento y almacenamiento. |
+| DA03 | El sistema debe proteger los datos de usuarios y operaciones de compra. | AC04 – Seguridad | Puede influir en autenticación, autorización y protección de datos. |
+| DA04 | El sistema debe integrarse con una pasarela de pago externa mediante una API. | RC04 – Pasarela de pago | Condiciona la forma de comunicación e integración con servicios externos. |
+| DA05 | El sistema debe utilizar una API REST para la comunicación entre frontend y backend. | RC03 – API REST | Limita las alternativas de comunicación entre las partes del sistema. |
+| DA06 | El sistema debe permitir modificar funcionalidades sin afectar innecesariamente otros módulos. | AC05 – Mantenibilidad | Influye en la separación de responsabilidades, modularidad y dependencias internas. |
